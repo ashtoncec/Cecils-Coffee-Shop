@@ -8,10 +8,16 @@ struct IncomeDetailView: View {
 
     var body: some View {
         VStack {
-            TextField("Enter details here", text: $details)
+            Text("Description:")
+                .font(.headline)
+                .padding(.top)
+
+            TextEditor(text: $details)
                 .multilineTextAlignment(.center)
                 .padding()
-                .frame(maxWidth: .infinity)
+                .frame(minHeight: 100)
+                .border(Color.blue, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/) 
+                .cornerRadius(5)
 
             Button("Save") {
                 if let index = finances.incomeSources.firstIndex(where: { $0.id == incomeSource.id }) {
@@ -23,7 +29,6 @@ struct IncomeDetailView: View {
         .padding()
         .navigationTitle(incomeSource.sourceName)
         .onAppear {
-            
             details = incomeSource.description
         }
     }

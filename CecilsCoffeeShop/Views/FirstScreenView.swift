@@ -11,10 +11,17 @@ struct FirstScreenView: View {
                     .bold()
                     .font(.system(size: 28))
                     .kerning(2)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.brown, ignoresSafeAreaEdges: .horizontal)
                     .padding()
                 
                 Text("Owned and operated by Ashton Cecil")
+                    .font(.system(size: 19))
                     .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.blue, ignoresSafeAreaEdges: .horizontal)
+                
+                
                 
                 NavigationLink(destination: UtilitiesView(finances: finances)) {
                     Image("CoffeeShop")
@@ -30,8 +37,7 @@ struct FirstScreenView: View {
 
 struct FirstScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        // Create a sample Finances object for preview purposes
-        let sampleFinances = Finances(title: "Sample Coffee Shop")
+        let sampleFinances = Finances(title: "Test")
         FirstScreenView(finances: sampleFinances)
     }
-}
+} // This will help with rendering a live preview of FirstScreenView

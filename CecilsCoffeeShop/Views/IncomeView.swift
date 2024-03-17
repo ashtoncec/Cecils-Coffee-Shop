@@ -6,6 +6,18 @@ struct IncomeView: View {
 
     var body: some View {
         List {
+            // Section for the total income
+            Section {
+                HStack {
+                    Text("Total Income")
+                        .font(.headline)
+                    Spacer()
+                    Text("$\(finances.totalIncome, specifier: "%.2f")")
+                        .font(.headline)
+                }
+            }
+            
+            // List of income sources with navigation to detail view
             ForEach(finances.incomeSources) { income in
                 NavigationLink(destination: IncomeDetailView(incomeSource: income, finances: finances)) {
                     VStack(alignment: .leading) {
@@ -16,10 +28,9 @@ struct IncomeView: View {
             }
             .onDelete(perform: deleteIncome)
             
-            
+            // Navigation link to add a new income source
             NavigationLink(destination: AddIncomeView(finances: finances)) {
                 Text("Add New Income Source")
-                    .foregroundColor(.blue)
             }
         }
         .navigationTitle("Income Sources")

@@ -8,10 +8,16 @@ struct ExpenseDetailView: View {
 
     var body: some View {
         VStack {
-            TextField("Enter details here", text: $details)
-                .multilineTextAlignment(.center) // Center align the text field content
+            Text("Description:")
+                .font(.headline)
+                .padding(.top)
+
+            TextEditor(text: $details)
+                .multilineTextAlignment(.center)
                 .padding()
-                .frame(maxWidth: .infinity) // Use maximum width for the text field
+                .frame(minHeight: 100) 
+                .border(Color.red, width: 1)
+                .cornerRadius(5)
 
             Button("Save") {
                 if let index = finances.expenseSources.firstIndex(where: { $0.id == expenseSource.id }) {
@@ -20,7 +26,7 @@ struct ExpenseDetailView: View {
             }
             .padding()
         }
-        .padding() // Add padding around the VStack to avoid being too close to the edges
+        .padding()
         .navigationTitle(expenseSource.sourceName)
         .onAppear {
             details = expenseSource.description

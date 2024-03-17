@@ -7,6 +7,18 @@ struct ExpenseView: View {
 
     var body: some View {
         List {
+            // Section for the total expenses
+            Section {
+                HStack {
+                    Text("Total Expenses")
+                        .font(.headline)
+                    Spacer()
+                    Text("$\(finances.totalExpenses, specifier: "%.2f")")
+                        .font(.headline)
+                }
+            }
+            
+            // List of expense sources with navigation to detail view
             ForEach(finances.expenseSources) { expense in
                 NavigationLink(destination: ExpenseDetailView(expenseSource: expense, finances: finances)) {
                     VStack(alignment: .leading) {
@@ -15,11 +27,12 @@ struct ExpenseView: View {
                     }
                 }
             }
+            
             .onDelete(perform: deleteExpense)
-
+            
+            // Navigation link to add a new expense source
             NavigationLink(destination: AddExpenseView(finances: finances)) {
                 Text("Add New Expense Source")
-                    .foregroundColor(.blue)
             }
         }
         .navigationTitle("Expense Sources")
