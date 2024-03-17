@@ -15,10 +15,20 @@ class Finances: Identifiable, ObservableObject {
     @Published var incomeSources: [Income]
     @Published var expenseSources: [Expenses]
     
-    init(title: String, incomeSources: [Income] = [], expenseSources: [Expenses] = []) {
+    init(title: String) {
         self.title = title
-        self.incomeSources = incomeSources
-        self.expenseSources = expenseSources
+        
+        // Sample income data
+        self.incomeSources = [
+            Income(id: UUID().uuidString, sourceName: "Coffee Sales", amount: 1500.00, description: "Income from selling coffee"),
+            Income(id: UUID().uuidString, sourceName: "Coffee Mugs", amount: 500.00, description: "Income from branded coffee mugs")
+        ]
+        
+        // Sample expense data
+        self.expenseSources = [
+            Expenses(id: UUID().uuidString, sourceName: "Utilities", amount: 300.00, description: "Monthly utilities bill"),
+            Expenses(id: UUID().uuidString, sourceName: "Rent", amount: 1200.00, description: "Monthly rent payment")
+        ]
     }
     
     func addIncomeSource(_ incomeSource: Income) {

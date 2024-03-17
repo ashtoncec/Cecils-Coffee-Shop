@@ -16,6 +16,8 @@
 		A2217F642BA5F57F0067B2EF /* FirstScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2217F632BA5F57F0067B2EF /* FirstScreenView.swift */; };
 		A2217F662BA5F6B90067B2EF /* UtilitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2217F652BA5F6B90067B2EF /* UtilitiesView.swift */; };
 		A2217F682BA5FE980067B2EF /* Finances.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2217F672BA5FE980067B2EF /* Finances.swift */; };
+		A2217F6A2BA64D1E0067B2EF /* IncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2217F692BA64D1E0067B2EF /* IncomeView.swift */; };
+		A2217F6C2BA64D2F0067B2EF /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2217F6B2BA64D2F0067B2EF /* ExpenseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		A2217F632BA5F57F0067B2EF /* FirstScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenView.swift; sourceTree = "<group>"; };
 		A2217F652BA5F6B90067B2EF /* UtilitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesView.swift; sourceTree = "<group>"; };
 		A2217F672BA5FE980067B2EF /* Finances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finances.swift; sourceTree = "<group>"; };
+		A2217F692BA64D1E0067B2EF /* IncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeView.swift; sourceTree = "<group>"; };
+		A2217F6B2BA64D2F0067B2EF /* ExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 				A2217F4B2BA4F5CB0067B2EF /* ContentView.swift */,
 				A2217F632BA5F57F0067B2EF /* FirstScreenView.swift */,
 				A2217F652BA5F6B90067B2EF /* UtilitiesView.swift */,
+				A2217F692BA64D1E0067B2EF /* IncomeView.swift */,
+				A2217F6B2BA64D2F0067B2EF /* ExpenseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +175,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2217F5D2BA5343B0067B2EF /* Expenses.swift in Sources */,
+				A2217F6A2BA64D1E0067B2EF /* IncomeView.swift in Sources */,
+				A2217F6C2BA64D2F0067B2EF /* ExpenseView.swift in Sources */,
 				A2217F682BA5FE980067B2EF /* Finances.swift in Sources */,
 				A2217F4C2BA4F5CB0067B2EF /* ContentView.swift in Sources */,
 				A2217F5B2BA5342B0067B2EF /* Income.swift in Sources */,

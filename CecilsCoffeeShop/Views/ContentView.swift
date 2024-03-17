@@ -8,36 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    @StateObject var finances = Finances(title: "Cecil's Coffee Shop")
     var body: some View {
         
-        VStack{
-            
-            FirstScreenTitle()
-            
-        }
-    }
-}
-
-
-struct FirstScreenTitle: View{
-    var body: some View{
-        VStack {
-            
-            Text("Cecil's Coffee Shop")
-                .bold()
-                .font(.system(size: 28))
-                .kerning(2)
-            
-            Text("Owned and operated by Ashton Cecil")
-        }
-        .padding()
+        FirstScreenView(finances: finances)
         
     }
-    
 }
-
-
 
 #Preview {
     ContentView()
