@@ -1,9 +1,3 @@
-//
-//  Expenses.swift
-//  CecilsCoffeeShop
-//
-//  Created by Ashton Cecil on 3/15/24.
-//
 
 import Foundation
 

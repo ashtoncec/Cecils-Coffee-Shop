@@ -3,6 +3,7 @@ import SwiftUI
 
 struct AddExpenseView: View {
     @ObservedObject var finances: Finances
+
     @State private var sourceName = ""
     @State private var amount = ""
     @State private var details = ""
@@ -11,20 +12,22 @@ struct AddExpenseView: View {
         Form {
             TextField("Source Name", text: $sourceName)
             TextField("Amount", text: $amount)
-                .keyboardType(.decimalPad)
-            TextField("Details (Optional)", text: $details)
+                .keyboardType(.decimalPad)  
+            TextField("Details", text: $details)
             
-            Button("Add") {
+            Button("Add Expense Source") {
                 if let amountDouble = Double(amount) {
                     let newExpense = Expenses(id: UUID().uuidString, sourceName: sourceName, amount: amountDouble, description: details)
                     finances.addExpenseSource(newExpense)
-                    // Optionally reset fields here if not using modal presentation
+                    
+                    // Again, this will clear fields after adding details
                     sourceName = ""
                     amount = ""
                     details = ""
                 }
             }
+            .disabled(sourceName.isEmpty || amount.isEmpty)
         }
-        .navigationTitle("Add Expense Source")
+        .navigationTitle("Add New Expense")
     }
 }

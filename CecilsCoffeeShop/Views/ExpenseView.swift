@@ -8,22 +8,24 @@ struct ExpenseView: View {
     var body: some View {
         List {
             ForEach(finances.expenseSources) { expense in
-                VStack(alignment: .leading) {
-                    Text(expense.sourceName).font(.headline)
-                    Text("$\(expense.amount, specifier: "%.2f")").font(.subheadline)
+                NavigationLink(destination: ExpenseDetailView(expenseSource: expense, finances: finances)) {
+                    VStack(alignment: .leading) {
+                        Text(expense.sourceName).font(.headline)
+                        Text("$\(expense.amount, specifier: "%.2f")").font(.subheadline)
+                    }
                 }
             }
             .onDelete(perform: deleteExpense)
-            
-            // Navigation to AddExpenseView
+
             NavigationLink(destination: AddExpenseView(finances: finances)) {
                 Text("Add New Expense Source")
+                    .foregroundColor(.blue)
             }
         }
-        .navigationBarTitle("Expense Sources")
+        .navigationTitle("Expense Sources")
     }
 
-    private func deleteExpense(at offsets: IndexSet) {
+    func deleteExpense(at offsets: IndexSet) {
         finances.expenseSources.remove(atOffsets: offsets)
     }
 }

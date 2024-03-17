@@ -12,14 +12,15 @@ struct AddIncomeView: View {
         Form {
             TextField("Source Name", text: $sourceName)
             TextField("Amount", text: $amount)
-                .keyboardType(.decimalPad)  // Ensure numeric input for the amount
+                .keyboardType(.decimalPad)
             TextField("Details", text: $details)
             
             Button("Add Income Source") {
                 if let amountDouble = Double(amount) {
                     let newIncome = Income(id: UUID().uuidString, sourceName: sourceName, amount: amountDouble, description: details)
                     finances.addIncomeSource(newIncome)
-                    // Clear fields after adding
+                    
+                    // This is meant to clear fields after adding details
                     sourceName = ""
                     amount = ""
                     details = ""

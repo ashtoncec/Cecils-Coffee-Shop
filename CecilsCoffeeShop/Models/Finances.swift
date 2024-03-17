@@ -1,9 +1,3 @@
-//
-//  Finances.swift
-//  CecilsCoffeeShop
-//
-//  Created by Ashton Cecil on 3/16/24.
-//
 
 import Foundation
 
@@ -16,15 +10,16 @@ class Finances: Identifiable, ObservableObject {
     @Published var expenseSources: [Expenses]
     
     init(title: String) {
+        
         self.title = title
         
-        // Sample income data
+        // Initial income data shown to user
         self.incomeSources = [
             Income(id: UUID().uuidString, sourceName: "Coffee Sales", amount: 1500.00, description: "Income from selling coffee"),
             Income(id: UUID().uuidString, sourceName: "Coffee Mugs", amount: 500.00, description: "Income from branded coffee mugs")
         ]
         
-        // Sample expense data
+       // Initial expense data shown to user
         self.expenseSources = [
             Expenses(id: UUID().uuidString, sourceName: "Utilities", amount: 300.00, description: "Monthly utilities bill"),
             Expenses(id: UUID().uuidString, sourceName: "Rent", amount: 1200.00, description: "Monthly rent payment")

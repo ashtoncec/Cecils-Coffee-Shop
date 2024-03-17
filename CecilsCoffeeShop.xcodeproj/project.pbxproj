@@ -21,6 +21,7 @@
 		A2217F6E2BA6856E0067B2EF /* AddIncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2217F6D2BA6856E0067B2EF /* AddIncomeView.swift */; };
 		A2217F702BA68C290067B2EF /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2217F6F2BA68C290067B2EF /* AddExpenseView.swift */; };
 		A2217F722BA691C80067B2EF /* IncomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2217F712BA691C80067B2EF /* IncomeDetailView.swift */; };
+		A2217F742BA6A0410067B2EF /* ExpenseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2217F732BA6A0410067B2EF /* ExpenseDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		A2217F6D2BA6856E0067B2EF /* AddIncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncomeView.swift; sourceTree = "<group>"; };
 		A2217F6F2BA68C290067B2EF /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
 		A2217F712BA691C80067B2EF /* IncomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeDetailView.swift; sourceTree = "<group>"; };
+		A2217F732BA6A0410067B2EF /* ExpenseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				A2217F712BA691C80067B2EF /* IncomeDetailView.swift */,
 				A2217F6B2BA64D2F0067B2EF /* ExpenseView.swift */,
 				A2217F6F2BA68C290067B2EF /* AddExpenseView.swift */,
+				A2217F732BA6A0410067B2EF /* ExpenseDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				A2217F682BA5FE980067B2EF /* Finances.swift in Sources */,
 				A2217F4C2BA4F5CB0067B2EF /* ContentView.swift in Sources */,
 				A2217F6E2BA6856E0067B2EF /* AddIncomeView.swift in Sources */,
+				A2217F742BA6A0410067B2EF /* ExpenseDetailView.swift in Sources */,
 				A2217F5B2BA5342B0067B2EF /* Income.swift in Sources */,
 				A2217F642BA5F57F0067B2EF /* FirstScreenView.swift in Sources */,
 				A2217F4A2BA4F5CB0067B2EF /* CecilsCoffeeShopApp.swift in Sources */,

@@ -16,7 +16,7 @@ struct IncomeView: View {
             }
             .onDelete(perform: deleteIncome)
             
-            // Navigate to AddIncomeView to add a new income source
+            
             NavigationLink(destination: AddIncomeView(finances: finances)) {
                 Text("Add New Income Source")
                     .foregroundColor(.blue)

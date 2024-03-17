@@ -1,9 +1,3 @@
-//
-//  FirstScreenView.swift
-//  CecilsCoffeeShop
-//
-//  Created by Ashton Cecil on 3/16/24.
-//
 
 import SwiftUI
 
