@@ -18,6 +18,9 @@
 		A2217F682BA5FE980067B2EF /* Finances.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2217F672BA5FE980067B2EF /* Finances.swift */; };
 		A2217F6A2BA64D1E0067B2EF /* IncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2217F692BA64D1E0067B2EF /* IncomeView.swift */; };
 		A2217F6C2BA64D2F0067B2EF /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2217F6B2BA64D2F0067B2EF /* ExpenseView.swift */; };
+		A2217F6E2BA6856E0067B2EF /* AddIncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2217F6D2BA6856E0067B2EF /* AddIncomeView.swift */; };
+		A2217F702BA68C290067B2EF /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2217F6F2BA68C290067B2EF /* AddExpenseView.swift */; };
+		A2217F722BA691C80067B2EF /* IncomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2217F712BA691C80067B2EF /* IncomeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		A2217F672BA5FE980067B2EF /* Finances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finances.swift; sourceTree = "<group>"; };
 		A2217F692BA64D1E0067B2EF /* IncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeView.swift; sourceTree = "<group>"; };
 		A2217F6B2BA64D2F0067B2EF /* ExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
+		A2217F6D2BA6856E0067B2EF /* AddIncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncomeView.swift; sourceTree = "<group>"; };
+		A2217F6F2BA68C290067B2EF /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
+		A2217F712BA691C80067B2EF /* IncomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,10 @@
 				A2217F632BA5F57F0067B2EF /* FirstScreenView.swift */,
 				A2217F652BA5F6B90067B2EF /* UtilitiesView.swift */,
 				A2217F692BA64D1E0067B2EF /* IncomeView.swift */,
+				A2217F6D2BA6856E0067B2EF /* AddIncomeView.swift */,
+				A2217F712BA691C80067B2EF /* IncomeDetailView.swift */,
 				A2217F6B2BA64D2F0067B2EF /* ExpenseView.swift */,
+				A2217F6F2BA68C290067B2EF /* AddExpenseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,14 +183,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2217F702BA68C290067B2EF /* AddExpenseView.swift in Sources */,
 				A2217F5D2BA5343B0067B2EF /* Expenses.swift in Sources */,
 				A2217F6A2BA64D1E0067B2EF /* IncomeView.swift in Sources */,
 				A2217F6C2BA64D2F0067B2EF /* ExpenseView.swift in Sources */,
 				A2217F682BA5FE980067B2EF /* Finances.swift in Sources */,
 				A2217F4C2BA4F5CB0067B2EF /* ContentView.swift in Sources */,
+				A2217F6E2BA6856E0067B2EF /* AddIncomeView.swift in Sources */,
 				A2217F5B2BA5342B0067B2EF /* Income.swift in Sources */,
 				A2217F642BA5F57F0067B2EF /* FirstScreenView.swift in Sources */,
 				A2217F4A2BA4F5CB0067B2EF /* CecilsCoffeeShopApp.swift in Sources */,
+				A2217F722BA691C80067B2EF /* IncomeDetailView.swift in Sources */,
 				A2217F662BA5F6B90067B2EF /* UtilitiesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -49,5 +49,7 @@ class Finances: Identifiable, ObservableObject {
     
     var netIncome: Double {
         totalIncome - totalExpenses
+        
+        
     }
 }
